@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Fonts */
+  --font-sans: var(--font-gellix), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-ulm), var(--font-gellix), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  /* Monochrome neutral scale (was brand purple) */
+  --color-brand: #262626;
+  --color-brand-dark: #171717;
+  --color-brand-deep: #0a0a0a;
+  --color-brand-light: #525252;
+  --color-brand-lighter: #737373;
+  --color-brand-soft: #d4d4d4;
+  --color-brand-faint: #f5f5f5;
+  --color-brand-ink: #171717;
+  --color-brand-night: #0a0a0a;
+
+  /* Neutrals / surfaces */
+  --color-ink: #171717;
+  --color-ink-soft: #262626;
+  --color-muted: #737373;
+  --color-cream: #fafafa;
+  --color-cream-2: #f5f5f5;
+  --color-cream-3: #ededed;
+  --color-paper: #ffffff;
+  --color-line: #e5e5e5;
+
+  /* Accent (was peach) -> neutral gray */
+  --color-peach: #d4d4d4;
+  --color-peach-2: #e5e5e5;
+  --color-peach-soft: #e5e5e5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Gradient text effect (UlmGrotesk + purple clip) — like the sample image */
+.gradient-text {
+  background-image: linear-gradient(180deg, #525252 0%, #0a0a0a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+/* Logo marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
+.animate-marquee {
+  animation: marquee 42s linear infinite;
+}
+
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
