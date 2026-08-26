@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { LegalPage, LegalSection } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Política de privacidad | noren",
-  description: "Conoce cómo noren trata los datos personales compartidos a través de su sitio web.",
+  title: "Política de Privacidad",
+  description:
+    "Conoce cómo noren trata los datos personales compartidos a través de su sitio web.",
+  alternates: { canonical: "https://noren.tech/privacidad" },
+  robots: { index: false, follow: false },
 };
 
 export default function PrivacyPage() {

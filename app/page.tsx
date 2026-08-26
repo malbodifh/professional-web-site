@@ -10,10 +10,20 @@ import { AskAI } from "@/components/AskAI";
 import { FAQ } from "@/components/FAQ";
 import { PricingCTA } from "@/components/PricingCTA";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import {
+  organizationSchema,
+  webSiteSchema,
+  faqPageSchema,
+} from "@/lib/schemas";
+
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={organizationSchema()} />
+      <JsonLd data={webSiteSchema()} />
+      <JsonLd data={faqPageSchema()} />
       <Header />
       <main className="flex-1">
         <Hero />

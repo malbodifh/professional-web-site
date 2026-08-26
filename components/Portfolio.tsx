@@ -23,7 +23,7 @@ export function Portfolio() {
               {project.image ? (
                 <Image
                   src={project.image}
-                  alt={project.name}
+                  alt={`${project.name} — sitio web desarrollado por noren`}
                   width={640}
                   height={400}
                   className="aspect-[16/10] w-full object-cover"

@@ -40,7 +40,7 @@ export function Testimonials() {
               <footer className="flex items-center gap-3 border-t border-ink/6 pt-5">
                 <Image
                   src={t.logo}
-                  alt={t.name}
+                  alt={`Logo de ${t.name} — cliente de noren`}
                   width={44}
                   height={44}
                   className={cn(

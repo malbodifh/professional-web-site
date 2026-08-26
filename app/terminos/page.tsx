@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { LegalPage, LegalSection } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Términos de uso | noren",
+  title: "Términos de Uso",
   description: "Términos de uso del sitio web de noren.",
+  alternates: { canonical: "https://noren.tech/terminos" },
+  robots: { index: false, follow: false },
 };
 
 export default function TermsPage() {

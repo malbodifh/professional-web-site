@@ -1,11 +1,12 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from "next";
+import { BASE_URL } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
+      userAgent: "*",
+      allow: "/",
     },
-    sitemap: 'https://noren.tech/sitemap.xml',
-  }
+    sitemap: `${BASE_URL}/sitemap.xml`,
+  };
 }

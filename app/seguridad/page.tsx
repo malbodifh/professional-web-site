@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { LegalPage, LegalSection } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Seguridad | noren",
-  description: "Información sobre el enfoque de seguridad de noren para este sitio web.",
+  title: "Seguridad",
+  description:
+    "Información sobre el enfoque de seguridad de noren para este sitio web.",
+  alternates: { canonical: "https://noren.tech/seguridad" },
+  robots: { index: false, follow: false },
 };
 
 export default function SecurityPage() {
