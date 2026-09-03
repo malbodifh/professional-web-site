@@ -1,5 +1,5 @@
-import { featureCards } from "@/lib/content";
-import { Section } from "./ui/Section";
+import { featureCards, featureCardsSection } from "@/lib/content";
+import { Section, SectionHeading } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
 
 const icons = [
@@ -24,7 +24,13 @@ const icons = [
 export function FeatureCards() {
   return (
     <Section id="product" className="bg-cream">
-      <div className="grid gap-5 md:grid-cols-3">
+      <Reveal>
+        <SectionHeading
+          eyebrow={featureCardsSection.eyebrow}
+          title={featureCardsSection.heading}
+        />
+      </Reveal>
+      <div className="mt-14 grid gap-5 md:grid-cols-3">
         {featureCards.map((card, i) => (
           <Reveal key={card.title} delay={i * 0.08}>
             <article className="group flex h-full flex-col gap-5 rounded-3xl border border-ink/6 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_-30px_rgba(26,24,43,0.25)]">

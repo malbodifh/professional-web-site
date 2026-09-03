@@ -25,6 +25,7 @@ function FAQItem({
           : "border-ink/6 bg-white hover:border-ink/12",
       )}
     >
+      <h3 className="m-0 text-inherit">
       <button
         onClick={onToggle}
         aria-expanded={isOpen}
@@ -60,6 +61,7 @@ function FAQItem({
           </svg>
         </span>
       </button>
+      </h3>
 
       <AnimatePresence initial={false}>
         {isOpen && (

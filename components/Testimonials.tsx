@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { testimonials } from "@/lib/content";
+import { testimonials, testimonialsSection } from "@/lib/content";
 import { cn } from "@/lib/cn";
 import { Section, SectionHeading } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
@@ -22,8 +22,8 @@ export function Testimonials() {
       <Reveal>
         <SectionHeading
           eyebrow="Prueba social"
-          title="Proyectos que demuestran lo que hacemos"
-          subtitle="Dos soluciones con enfoques distintos, creadas a medida para comunicar, convertir y crecer."
+          title={testimonialsSection.heading}
+          subtitle={testimonialsSection.subtitle}
         />
       </Reveal>
 

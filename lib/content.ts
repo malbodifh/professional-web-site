@@ -69,8 +69,8 @@ export const slogan = "Tu idea, hecha software.";
 export const nav = {
   links: [
     { label: "Servicios", href: "#product" },
-    { label: "Proceso", href: "#solutions" },
     { label: "Comparativa", href: "#compare" },
+    { label: "Proceso", href: "#solutions" },
     { label: "Portafolio", href: "#portafolio" },
     { label: "Preguntas", href: "#resources" },
   ],
@@ -85,8 +85,8 @@ export const trustBadges: string[] = [
 ];
 
 export const hero = {
-  titleLead: "Software a medida para automatizar y",
-  titleAccent: "crecer.",
+  titleLead: "Desarrollo de software a medida en",
+  titleAccent: "Costa Rica",
   subtitle:
     "Creamos software y sitios web a medida para empresas: captamos clientes, automatizamos procesos y hacemos crecer tu operación.",
   primaryCta: { label: "Agenda una llamada", href: whatsapp.call },
@@ -105,21 +105,26 @@ export const clientLogos: ClientLogo[] = [
 
 export const featureCards: FeatureCard[] = [
   {
-    title: "Software 100% a medida",
+    title: "Desarrollo de software personalizado, sin plantillas",
     body: "Nada de plantillas. Diseñamos y construimos cada sistema según tu operación, tus procesos y tus objetivos.",
   },
   {
-    title: "Enfocado en resultados",
+    title: "Sitios web que generan clientes y ventas",
     body: "Creamos software y sitios web pensados para captar clientes y aumentar tus ventas, no solo para verse bien.",
   },
   {
-    title: "Automatización y eficiencia",
+    title: "Automatización de procesos para empresas",
     body: "Eliminamos tareas manuales y conectamos tus herramientas para que tu equipo trabaje más rápido y sin errores.",
   },
 ];
 
+export const featureCardsSection = {
+  eyebrow: "Ventajas",
+  heading: "Software a medida para empresas que quieren crecer",
+};
+
 export const comparison = {
-  heading: "noren vs contratar in-house",
+  heading: "Agencia de software a medida vs equipo interno",
   subheading:
     "Montar un equipo interno toma meses y cuesta caro todo el año. Con noren obtienes el resultado sin el riesgo.",
   columns: ["Caso", "Equipo in-house", "noren"],
@@ -166,33 +171,38 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
+export const testimonialsSection = {
+  heading: "Proyectos de software a medida para empresas",
+  subtitle: "Sitios web y sistemas desarrollados a medida para negocios en Costa Rica.",
+};
+
 export const howItWorks = {
-  heading: "Cómo trabajamos",
+  heading: "Nuestro proceso de desarrollo de software",
   steps: [
     {
       step: 1,
-      title: "Idea",
+      title: "Consulta inicial gratuita",
       body: "Nos cuentas tu necesidad u objetivo. Analizamos tu caso y definimos juntos el alcance del proyecto.",
     },
     {
       step: 2,
-      title: "Prototipo",
+      title: "Diseño y prototipo de tu software",
       body: "Diseñamos la solución y te mostramos un prototipo para validar la dirección antes de construir.",
     },
     {
       step: 3,
-      title: "Desarrollo",
+      title: "Desarrollo, lanzamiento y soporte",
       body: "Construimos, lanzamos y te acompañamos con soporte y mantenimiento continuo.",
     },
   ],
 };
 
 export const useCases = {
-  heading: "Lo que construimos",
+  heading: "Servicios de desarrollo de software en Costa Rica",
   items: [
     {
       role: "Sitios web",
-      title: "Webs a medida que captan clientes",
+      title: "Desarrollo de sitios web para empresas",
       bullets: [
         "Landing pages y sitios corporativos",
         "Optimizados para SEO y velocidad",
@@ -202,7 +212,7 @@ export const useCases = {
     },
     {
       role: "Sistemas internos",
-      title: "Sistemas de gestión a tu medida",
+      title: "Sistemas de gestión y CRM a medida",
       bullets: [
         "Paneles y CRMs personalizados",
         "Control de inventario, ventas y clientes",
@@ -212,7 +222,7 @@ export const useCases = {
     },
     {
       role: "Automatización",
-      title: "Automatización de procesos",
+      title: "Automatización de procesos empresariales",
       bullets: [
         "Eliminamos tareas repetitivas",
         "Integraciones entre tus aplicaciones",
@@ -222,7 +232,7 @@ export const useCases = {
     },
     {
       role: "Apps y e-commerce",
-      title: "Apps móviles y tiendas online",
+      title: "Desarrollo de apps móviles y e-commerce",
       bullets: [
         "Apps a medida para iOS y Android",
         "Tiendas online y pasarelas de pago",
@@ -235,7 +245,7 @@ export const useCases = {
 
 // Sección reconvertida en CTA de contacto (mismo layout que la sección "Ask")
 export const askAI = {
-  heading: "Cuéntanos tu idea",
+  heading: "Cotiza tu proyecto de software a medida",
   body: "Cada proyecto empieza con una conversación. Cuéntanos qué necesitas y te decimos cómo lo construimos.",
   options: [
     "Quiero una web que capte más clientes",
@@ -247,7 +257,7 @@ export const askAI = {
 };
 
 export const faq = {
-  heading: "Preguntas frecuentes",
+  heading: "Preguntas frecuentes sobre desarrollo de software a medida",
   items: [
     {
       q: "¿Cuánto tarda un proyecto?",
@@ -285,7 +295,7 @@ export const faq = {
 };
 
 export const portfolio = {
-  heading: "Proyectos que hemos construido",
+  heading: "Portafolio de desarrollo web y software a medida",
   subtitle:
     "Una muestra de software y sitios web a medida que hemos desarrollado para nuestros clientes.",
   items: [
@@ -309,7 +319,7 @@ export const portfolio = {
 };
 
 export const pricing = {
-  heading: "Cada proyecto es único",
+  heading: "Solicita tu cotización de software a medida",
   body: "No trabajamos con paquetes fijos. Te damos una cotización a medida según lo que tu negocio realmente necesita.",
   cta: { label: "Agenda una llamada", href: whatsapp.call },
   note: "Cotización sin costo ni compromiso.",
@@ -329,8 +339,8 @@ export const footer = {
     {
       title: "Empresa",
       links: [
-        { label: "Cómo trabajamos", href: "#solutions" },
         { label: "Comparativa", href: "#compare" },
+        { label: "Cómo trabajamos", href: "#solutions" },
         { label: "Preguntas", href: "#resources" },
         { label: "Contacto", href: whatsapp.project },
       ],
